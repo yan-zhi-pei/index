@@ -450,14 +450,14 @@
         <div class="nav-links">
             <a onclick="document.getElementById('modules').scrollIntoView({behavior:'smooth'})">疗愈花园</a>
             <a onclick="document.getElementById('heavenLetterBtn').scrollIntoView({behavior:'smooth'})">天堂来信</a>
-            <a onclick="document.getElementById('communityBlock').scrollIntoView({behavior:'smooth'})">问答专区</a>
+            <a onclick="document.getElementById('communityBlock').scrollIntoView({behavior:'smooth'})">社群</a>
         </div>
     </div>
 
     <div class="hero">
         <div class="hero-text">
             <h1>让思念有处安放<br>让哀伤有路可循</h1>
-            <p>记忆守望是一个将艺术疗愈与AI技术结合的温暖平台。通过数字记忆相册、情感画布、仪式空间和匿名问答专区，陪你度过每一段怀念的时光。</p>
+            <p>记忆守望是一个将艺术疗愈与AI技术结合的温暖平台。通过数字记忆相册、情感画布、仪式空间和匿名社群，陪你度过每一段怀念的时光。</p>
             <button class="btn" id="exploreBtn"><i class="fas fa-feather-alt"></i> 开启疗愈之旅</button>
         </div>
         <div class="hero-img">
@@ -471,67 +471,72 @@
     <div id="modules">
         <h2 class="section-title"><i class="fas fa-feather"></i> 艺术疗愈工作室</h2>
         <div class="card-grid">
-            <!-- 数字记忆相册模块（小图标已统一） -->
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-images"></i></div>
-                <h3>数字记忆相册</h3>
-                <p>上传照片，添加声音印记，让回忆鲜活。</p>
-                <button class="demo-btn" data-modal="memoryFullModal"><i class="fas fa-play-circle"></i> 进入相册</button>
-            </div>
-            <!-- 情感画布模块：生成独特且与其他模块协调的小图标 (绘画+AI融合感) -->
-            <div class="card">
-                <div class="card-icon" data-custom="canvas">
-                    <i class="fas fa-palette"></i>
-                </div>
-                <h3>情感画布</h3>
-                <p>绘画 & AI文生图，将思念化为图像。</p>
-                <button class="demo-btn" data-modal="canvasFullModal"><i class="fas fa-play-circle"></i> 开始创作</button>
-            </div>
-            <!-- 仪式感空间 · 华丽礼赞 -->
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-crown"></i></div>
-                <h3>仪式感空间 · 华丽礼赞</h3>
-                <p>虚拟纪念仪式、点烛、花瓣祈愿。</p>
-                <button class="demo-btn" data-modal="ritualFullModal"><i class="fas fa-play-circle"></i> 举行仪式</button>
-            </div>
-            <!-- 星光匿名社区 -->
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-users"></i></div>
-                <h3>星光匿名社区</h3>
-                <p>匿名分享，AI情绪预警。</p>
-                <button class="demo-btn" data-modal="communityFullModal"><i class="fas fa-play-circle"></i> 进入社区</button>
-            </div>
+            <div class="card"><div class="card-icon"><i class="fas fa-images"></i></div><h3>数字记忆相册</h3><p>上传照片，添加声音印记，让回忆鲜活。</p><button class="demo-btn" data-modal="memoryFullModal"><i class="fas fa-play-circle"></i> 进入相册</button></div>
+            <div class="card"><div class="card-icon"><i class="fas fa-paintbrush-fine"></i></div><h3>情感画布</h3><p>绘画 & AI文生图，将思念化为图像。</p><button class="demo-btn" data-modal="canvasFullModal"><i class="fas fa-play-circle"></i> 开始创作</button></div>
+            <div class="card"><div class="card-icon"><i class="fas fa-crown"></i></div><h3>仪式感空间 · 华丽礼赞</h3><p>虚拟纪念仪式、点烛、花瓣祈愿。</p><button class="demo-btn" data-modal="ritualFullModal"><i class="fas fa-play-circle"></i> 举行仪式</button></div>
+            <div class="card"><div class="card-icon"><i class="fas fa-users"></i></div><h3>星光匿名社区</h3><p>匿名分享，AI情绪预警。</p><button class="demo-btn" data-modal="communityFullModal"><i class="fas fa-play-circle"></i> 进入社区</button></div>
         </div>
     </div>
-<h2 class="section-title"><i class="fas fa-seedling"></i> 创造性记忆再生</h2>
-<div class="card-grid">
-    <!-- 卡片1：记忆启发作词 -->
-    <div class="card creative-card">
-        <div class="card-icon"><i class="fas fa-feather-alt"></i></div>
-        <h3>记忆启发作词</h3>
-        <p>基于记忆片段生成诗歌，让思念化作文字。</p>
-        <button class="demo-btn" data-modal="poemEnhancedModal"><i class="fas fa-play-circle"></i> 生成诗歌</button>
+
+    <h2 class="section-title"><i class="fas fa-seedling"></i> 创造性记忆再生</h2>
+    <div class="card-grid">
+        <div class="card"><div class="card-icon"><i class="fas fa-feather-alt"></i></div><h3>记忆启发作词</h3><p>基于记忆片段生成诗歌。</p><button class="demo-btn" data-modal="poemFullModal"><i class="fas fa-play-circle"></i> 生成诗歌</button></div>
+        <div class="card"><div class="card-icon"><i class="fas fa-chart-line"></i></div><h3>生活延续计划</h3><p>完成逝者未竟心愿。</p><button class="demo-btn" data-modal="legacyFullModal"><i class="fas fa-play-circle"></i> 心愿清单</button></div>
+        <div class="card"><div class="card-icon"><i class="fas fa-comments"></i></div><h3>AI数字人对话</h3><p>与逝者的数字形象对话。</p><button class="demo-btn" data-modal="aiFullModal"><i class="fas fa-robot"></i> 开始对话</button></div>
     </div>
-    
-    <!-- 卡片2：生活延续计划 -->
-    <div class="card creative-card">
-        <div class="card-icon"><i class="fas fa-chart-line"></i></div>
-        <h3>生活延续计划</h3>
-        <p>完成逝者未竟心愿，让爱延续。</p>
-        <button class="demo-btn" data-modal="legacyEnhancedModal"><i class="fas fa-play-circle"></i> 心愿清单</button>
+
+    <div id="heavenLetterBtn" style="margin: 3rem 0 1rem;">
+        <div class="card" style="background: linear-gradient(145deg, #ffffff, #faf5ff); border: 2px solid rgba(155,123,199,0.4); text-align: center;">
+            <div class="card-icon"><i class="fas fa-envelope-open-text"></i></div>
+            <h3>✉️ 来自天堂的信</h3>
+            <p>寄往星辰的思念，化作弹幕轻语。写下你想对TA说的话，让爱穿越时空。</p>
+            <button class="btn" data-modal="heavenLetterModal"><i class="fas fa-star"></i> 开启天堂信箱</button>
+        </div>
     </div>
-    
-    <!-- 卡片3：AI数字人对话 -->
-    <div class="card creative-card">
-        <div class="card-icon"><i class="fas fa-comments"></i></div>
-        <h3>AI数字人对话</h3>
-        <p>与逝者的数字形象对话，倾诉思念。</p>
-        <button class="demo-btn" data-modal="aiEnhancedModal"><i class="fas fa-play-circle"></i> 开始对话</button>
+
+    <div id="communityBlock" class="interactive-demo">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+            <div><h3 style="font-size: 1.8rem;">✨ 专家陪伴 & 温暖树洞</h3><p>每月2次艺术治疗师直播 · 匿名问答专区</p><button class="btn btn-outline" id="treeholeBtn">进入“问答树洞”</button></div>
+            <i class="fas fa-hand-holding-heart" style="font-size: 3.5rem; color: #9b7bc7;"></i>
+        </div>
     </div>
+
+    <footer><p>© 2026 记忆守望 · 让每一份思念都有处安放 | 公益与科技结合的心灵陪伴</p><p>💌 本页面为参赛项目展示。</p></footer>
 </div>
 
 <!-- 模态框 -->
-<div id="memoryFullModal" class="modal"><div class="modal-content"><span class="modal-close">&times;</span><h3><i class="fas fa-images"></i> 数字记忆相册</h3><div class="upload-area"><input type="file" id="memoryUpload" accept="image/*" style="display:none"><button class="btn" onclick="document.getElementById('memoryUpload').click()">上传照片</button></div><div id="memoryGalleryList" class="memory-grid"></div><div id="memoryStoryDisplay" style="margin-top:1rem; background:#f9f3ff; border-radius:20px; padding:1rem;">点击照片添加声音印记</div></div></div>
+<div id="poemEnhancedModal" class="modal">
+    <div class="modal-content" style="max-width: 700px;">
+        <span class="modal-close">&times;</span>
+        <h3><i class="fas fa-feather-alt"></i> 记忆启发作词 · 诗意思念</h3>
+        <p style="color: #6b5b7e; margin-bottom: 20px;">输入一个关键词或一段回忆，AI将为你生成专属诗歌</p>
+        
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 15px;">
+            <input type="text" id="poemKeywordInput" placeholder="例如：外婆、夏天、星空、离别..." style="flex: 1; padding: 12px; border-radius: 40px; border: 1px solid #ddd; font-size: 1rem;">
+            <button class="btn" id="generatePoemEnhancedBtn"><i class="fas fa-magic"></i> 生成诗歌</button>
+        </div>
+        
+        <!-- 快捷关键词 -->
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;">
+            <span class="keyword-chip" data-word="母亲">👩 母亲</span>
+            <span class="keyword-chip" data-word="父亲">👨 父亲</span>
+            <span class="keyword-chip" data-word="童年">🍭 童年</span>
+            <span class="keyword-chip" data-word="故乡">🏠 故乡</span>
+            <span class="keyword-chip" data-word="月光">🌙 月光</span>
+            <span class="keyword-chip" data-word="大海">🌊 大海</span>
+        </div>
+        
+        <!-- 诗歌生成结果区域 -->
+        <div id="poemResultContainer" style="background: #f9f3ff; border-radius: 28px; padding: 20px; min-height: 200px;">
+            <div style="text-align: center; color: #aaa;">
+                <i class="fas fa-feather-alt" style="font-size: 2rem; margin-bottom: 10px; display: block;"></i>
+                <p>✨ 输入关键词，让思念化作诗句 ✨</p>
+            </div>
+        </div>
+        
+        <div id="poemSavedHint" style="margin-top: 12px; font-size: 0.75rem; color: #9b7bc7; text-align: center;"></div>
+    </div>
+</div>
 
 <div id="canvasFullModal" class="modal"><div class="modal-content"><span class="modal-close">&times;</span><h3><i class="fas fa-palette"></i> 情感画布</h3><canvas id="drawCanvas" width="500" height="300" style="width:100%; height:auto; background:#fff; border-radius:16px;"></canvas><div class="flex-row"><button class="btn" id="clearCanvasBtn">清空画布</button><button class="btn" id="generateCardBtn">生成卡片</button></div><div style="margin-top: 20px; border-top: 1px solid #eee; padding-top: 15px;"><h4><i class="fas fa-robot"></i> AI 文生图</h4><textarea id="aiPromptInput" rows="2" placeholder="用中文描述你想生成的画面，例如：温暖的黄昏，一位老人坐在藤椅上，思念远方" style="width:100%; border-radius: 20px; padding: 12px;"></textarea><button class="btn" id="aiImageBtn" style="margin-top: 10px;"><i class="fas fa-magic"></i> 生成图像</button><div id="aiImageResult" style="margin-top: 15px;"></div></div><div id="cardPreview" style="display:none;"><img id="cardImage" style="max-width:100%; border-radius:16px;"></div></div></div>
 
